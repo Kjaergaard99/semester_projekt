@@ -5,12 +5,24 @@ namespace semester_projekt.Server.Models
 {
 	internal class FrivilligRepository : IFrivilligRepository
 	{
-		FestivalDBContext db = new FestivalDBContext();
+		FestivalDBContext db = new FestivalDBContext(); // skal denne linje være ligesom mini-projekt?
 
 
-		public void BookShelter(Vagt vagt)
+		public List<Vagt> GetMineVagter()
         {
-			
+            Console.WriteLine("getMineVagter frivilligRepository");
+			// kode; Find.ToList eller noget i den dur
+		}
+
+		public List<Vagt> GetLedieVagter()
+        {
+            Console.WriteLine("getLedigeVagter frivilligRepository");
+			// kode; Find.ToList eller noget i den dur
+        }
+
+		public void BookVagt(Vagt vagt)
+        {
+            Console.WriteLine("bookVagt frivilligRepository");
         }
 
 

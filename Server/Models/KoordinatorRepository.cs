@@ -5,13 +5,13 @@ namespace semester_projekt.Server.Models
 {
 	public class KoordinatorRepository : IKoordinatorRepository
 	{
-		FestivalDBContext db = new FestivalDBContext();
+		FestivalDBContext db = new FestivalDBContext(); // skal denne linje være ligesom mini-projekt?
 
 		public List<Vagt> GetAlleVagter()
         {
             Console.WriteLine("getAlleVagter koordinatorRepository");
-			// kode; find.toList
-        }
+			// kode; Find.ToList eller noget i den dur
+		}
 
 		public void AddVagt(Vagt vagt)
         {

@@ -4,7 +4,7 @@ using Npgsql;
 
 namespace semester_projekt.Shared.Models
 {
-    public class BrugerDTO
+    public class Bruger
     {
         public int BrugerId { get; set; }
         public string BrugerNavn { get; set; }
@@ -13,7 +13,7 @@ namespace semester_projekt.Shared.Models
         public int RolleId { get; set; }
 
 
-        public BrugerDTO()
+        public Bruger()
         {
 
         }

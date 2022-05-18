@@ -1,0 +1,56 @@
+﻿<Properties StartupConfiguration="{64EE1711-386C-4068-8DC0-3E37DB55529B}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Client/Shared/NavMenu.razor">
+    <Files>
+      <File FileName="Client/Pages/Counter.razor" Line="52" Column="6" />
+      <File FileName="Client/Pages/Index.razor" Line="10" Column="1" />
+      <File FileName="Shared/Models/BrugerDTO.cs" Line="18" Column="1" />
+      <File FileName="Server/Controllers/KoordinatorController.cs" Line="33" Column="3" />
+      <File FileName="Server/Models/BrugerRepository.cs" Line="37" Column="3" />
+      <File FileName="Server/Models/BrugerDBContext.cs" Line="22" Column="3" />
+      <File FileName="Server/Models/IBrugerRepository.cs" Line="17" Column="3" />
+      <File FileName="Shared/Models/Frivillig.cs" Line="8" Column="1" />
+      <File FileName="Shared/Models/Koordinator.cs" Line="1" Column="1" />
+      <File FileName="Client/Services/BrugerService.cs" Line="7" Column="4" />
+      <File FileName="Client/Services/FrivilligService.cs" Line="1" Column="1" />
+      <File FileName="Client/Services/KoordinatorService.cs" Line="25" Column="3" />
+      <File FileName="Shared/Models/Vagt.cs" Line="12" Column="15" />
+      <File FileName="Server/Data/KoordinatorContext.cs" Line="10" Column="34" />
+      <File FileName="Server/Data/KoordinatorDbOperations.cs" Line="18" Column="32" />
+      <File FileName="Server/Controllers/TestController.cs" Line="13" Column="21" />
+      <File FileName="Client/Shared/NavMenu.razor" Line="21" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="semester_projekt" expanded="True">
+            <Node name="semester_projekt.Client" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Shared" expanded="True">
+                <Node name="NavMenu.razor" selected="True" />
+              </Node>
+            </Node>
+            <Node name="semester_projekt.Server" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="semester_projekt.Shared" expanded="True">
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.semester__projekt.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

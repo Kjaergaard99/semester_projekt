@@ -1,0 +1,14 @@
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/bin/Debug/net6.0/semester_projekt.Shared.deps.json
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/bin/Debug/net6.0/semester_projekt.Shared.runtimeconfig.json
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/bin/Debug/net6.0/semester_projekt.Shared.dll
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/bin/Debug/net6.0/semester_projekt.Shared.pdb
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.csproj.AssemblyReference.cache
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.AssemblyInfoInputs.cache
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.AssemblyInfo.cs
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.csproj.CoreCompileInputs.cache
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.dll
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/refint/semester_projekt.Shared.dll
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.pdb
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.genruntimeconfig.cache
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/Debug/net6.0/ref/semester_projekt.Shared.dll

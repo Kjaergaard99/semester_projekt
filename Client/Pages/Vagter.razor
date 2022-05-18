@@ -1,0 +1,72 @@
+﻿@page "/vagter"
+@using semester_projekt.Shared.Models
+@using semester_projekt.Client.Services
+@inject HttpClient Http
+
+
+<PageTitle>Se vagter</PageTitle>
+
+<h1>Vagter</h1>
+
+@if (vagter == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>BrugerId</th>
+                <th>BrugerNavn</th>
+                <th>BrugerEmail</th>
+                <th>BrugerPassword</th>
+                <th>RolleId</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var vagt in vagter)
+            {
+                <tr>
+                    <td>@vagt.VagtId</td>
+                    <td>@vagt.Dato</td>
+                    <td>@vagt.VagtStart</td>
+                    <td>@vagt.VagtSlut</td>
+                    <td>@vagt.Pause</td>
+                    <td>@vagt.Område</td>
+                    <td>@vagt.ErBooket</td>
+                    <td>@vagt.BrugerId</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+}
+
+@functions{
+    private List<Vagt> vagter = new List<Vagt>();
+
+    [Inject]
+    public IVagtService VagtService { get; set; }
+
+    // Vagt[] vagter;
+
+    /*
+    protected override async void OnInitialized()
+    {
+        vagter = await Http.GetFromJsonAsync<Vagt[]>("api/vagter");
+    }
+    */
+
+    protected override async void OnInitialized()
+    {
+        vagter = (await VagtService.GetAlleVagter()).ToList();
+    }
+}
+
+@code {
+
+
+}
+

@@ -3,14 +3,14 @@ using semester_projekt.Shared.Models;
 
 namespace semester_projekt.Server.Models
 {
-	public class FrivilligRepository
+	internal class FrivilligRepository : IFrivilligRepository
 	{
-		FrivilligDBContext db = new FrivilligDBContext();
+		FestivalDBContext db = new FestivalDBContext();
 
 
 		public void BookShelter(Vagt vagt)
         {
-			db.
+			
         }
 
 

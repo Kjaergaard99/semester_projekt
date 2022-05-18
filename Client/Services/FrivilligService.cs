@@ -10,10 +10,10 @@ namespace semester_projekt.Client.Services
 
         public Task<Vagt[]?> GetMineVagter()
         {
-            var result = httpClient.GetFromJsonAsync<Vagt[]>("api/brugervagter");
+            var result = httpClient.GetFromJsonAsync<Vagt[]>("api/egnevagter");
             return result;
         }
-
+        
         public Task<Vagt[]?> GetLedieVagter()
         {
             var result = httpClient.GetFromJsonAsync<Vagt[]>("api/ledigevagter");
@@ -22,7 +22,7 @@ namespace semester_projekt.Client.Services
 
         public async Task<int> BookVagt(Vagt vagt)
         {
-            var response = await httpClient.PostAsJsonAsync("api/brugervagter", vagt);
+            var response = await httpClient.PostAsJsonAsync("api/egnevagter", vagt);
             var responseStatusCode = response.StatusCode;
             return (int)responseStatusCode;
         }

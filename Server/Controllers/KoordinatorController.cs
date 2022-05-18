@@ -1,33 +1,23 @@
-﻿/*
-using System;
+﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using semester_projekt.Shared.Models;
 using semester_projekt.Server.Models;
 
+
 namespace semester_projekt.Server.Controllers
 {
+	[ApiController]
+	[Route("api/allevagter")]
 	public class KoordinatorController : ControllerBase
 	{
-		private readonly IBrugerRepository Repository = new BrugerRepository();
+		private readonly IKoordinatorRepository Vagter = new KoordinatorRepository();
 
-
-		public KoordinatorController(IBrugerRepository brugerRepository)
+		public KoordinatorController(IKoordinatorRepository koordinatorRepository)
 		{
-			if (Repository == null && brugerRepository != null)
+			if (Vagter == null && koordinatorRepository != null)
 			{
-				Repository = brugerRepository;
+				Vagter = koordinatorRepository;
 				Console.WriteLine("Repository initialized");
 			}
 		}
-
-		[HttpGet]
-		public IEnumerable<BrugerDTO> GetAllItems()
-		{
-			Console.WriteLine("getallitems - controller");
-			return Repository.GetAllItems();
-		}
-	}
-}
-
-*/

@@ -1,6 +1,9 @@
 ﻿using System;
-using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using semester_projekt.Shared.Models;
+using semester_projekt.Server.Models;
+
 
 namespace semester_projekt.Server.Controllers
 {
@@ -8,12 +11,26 @@ namespace semester_projekt.Server.Controllers
 	[Route("api/ledigevagter")]
 	public class FrivilligController : ControllerBase
 	{
-		private readonly IFrivillig
+		private readonly IFrivilligRepository Vagter = new FrivilligRepository();
 
+		public FrivilligController(IFrivilligRepository frivilligRepository)
+        {
+            if (Vagter == null && frivilligRepository != null)
+            {
+				Vagter = frivilligRepository;
+				Console.WriteLine("Repository initialized");
+			}
+        }
 
-		public FrivilligController()
-		{
+		[HttpGet]
+		public IEnumerable<Vagt> GetLedigeVagter()
+        {
+			Console.WriteLine("getledigevagter - controller");
+			return Vagter.GetLedigeVagter();
 		}
+
+
+
 	}
 }
 

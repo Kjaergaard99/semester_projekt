@@ -6,7 +6,7 @@ namespace semester_projekt.Shared.Models
 {
     public class Frivillig : Bruger
     {
-        public string Kompetencer { get; set; }
+        private List<Kompetence> kompetencer = new List<Kompetence>();
 
 
         public Frivillig()

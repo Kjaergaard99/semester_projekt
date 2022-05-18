@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Server\\semester_projekt.Server.csproj": {}
+    "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Server/semester_projekt.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Client\\semester_projekt.Client.csproj": {
+    "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/semester_projekt.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Client\\semester_projekt.Client.csproj",
+        "projectUniqueName": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/semester_projekt.Client.csproj",
         "projectName": "semester_projekt.Client",
-        "projectPath": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Client\\semester_projekt.Client.csproj",
-        "packagesPath": "C:\\Users\\Madsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Client\\obj\\",
+        "projectPath": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/semester_projekt.Client.csproj",
+        "packagesPath": "/Users/bruger/.nuget/packages/",
+        "outputPath": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Madsk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/bruger/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Shared\\semester_projekt.Shared.csproj": {
-                "projectPath": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Shared\\semester_projekt.Shared.csproj"
+              "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/semester_projekt.Shared.csproj": {
+                "projectPath": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/semester_projekt.Shared.csproj"
               }
             }
           }
@@ -101,7 +99,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.4, 6.0.4]"
+              "version": "[6.0.5, 6.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -109,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.203/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -118,35 +116,33 @@
         }
       }
     },
-    "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Server\\semester_projekt.Server.csproj": {
+    "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Server/semester_projekt.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Server\\semester_projekt.Server.csproj",
+        "projectUniqueName": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Server/semester_projekt.Server.csproj",
         "projectName": "semester_projekt.Server",
-        "projectPath": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Server\\semester_projekt.Server.csproj",
-        "packagesPath": "C:\\Users\\Madsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Server\\obj\\",
+        "projectPath": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Server/semester_projekt.Server.csproj",
+        "packagesPath": "/Users/bruger/.nuget/packages/",
+        "outputPath": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Madsk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/bruger/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Client\\semester_projekt.Client.csproj": {
-                "projectPath": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Client\\semester_projekt.Client.csproj"
+              "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/semester_projekt.Client.csproj": {
+                "projectPath": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/semester_projekt.Client.csproj"
               },
-              "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Shared\\semester_projekt.Shared.csproj": {
-                "projectPath": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Shared\\semester_projekt.Shared.csproj"
+              "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/semester_projekt.Shared.csproj": {
+                "projectPath": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/semester_projekt.Shared.csproj"
               }
             }
           }
@@ -218,28 +214,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.203/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Shared\\semester_projekt.Shared.csproj": {
+    "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/semester_projekt.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Shared\\semester_projekt.Shared.csproj",
+        "projectUniqueName": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/semester_projekt.Shared.csproj",
         "projectName": "semester_projekt.Shared",
-        "projectPath": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Shared\\semester_projekt.Shared.csproj",
-        "packagesPath": "C:\\Users\\Madsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Madsk\\OneDrive\\Skrivebord\\semester_projekt\\Shared\\obj\\",
+        "projectPath": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/semester_projekt.Shared.csproj",
+        "packagesPath": "/Users/bruger/.nuget/packages/",
+        "outputPath": "/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Madsk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/bruger/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -308,7 +302,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

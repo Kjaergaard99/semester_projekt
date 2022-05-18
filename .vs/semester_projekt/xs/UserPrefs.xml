@@ -1,29 +1,7 @@
 ﻿<Properties StartupConfiguration="{64EE1711-386C-4068-8DC0-3E37DB55529B}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.semester__projekt.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Server/Models/FrivilligDBContext.cs">
-    <Files>
-      <File FileName="Client/Pages/Index.razor" Line="10" Column="1" />
-      <File FileName="Shared/Models/BrugerDTO.cs" Line="18" Column="1" />
-      <File FileName="Server/Controllers/KoordinatorController.cs" Line="33" Column="3" />
-      <File FileName="Shared/Models/Vagt.cs" Line="17" Column="10" />
-      <File FileName="Server/Data/KoordinatorContext.cs" Line="10" Column="34" />
-      <File FileName="Server/Data/KoordinatorDbOperations.cs" Line="18" Column="32" />
-      <File FileName="Server/Controllers/TestController.cs" Line="22" Column="43" />
-      <File FileName="Client/Shared/NavMenu.razor" Line="21" Column="15" />
-      <File FileName="Client/Program.cs" Line="19" Column="1" />
-      <File FileName="Shared/Models/Rolle.cs" Line="9" Column="1" />
-      <File FileName="Shared/Models/Opgave.cs" Line="15" Column="1" />
-      <File FileName="Shared/Models/Frivillig.cs" Line="15" Column="1" />
-      <File FileName="Shared/Models/Kompetence.cs" Line="8" Column="1" />
-      <File FileName="Client/Services/IFrivilligService.cs" Line="12" Column="33" />
-      <File FileName="Client/Services/FrivilligService.cs" Line="22" Column="1" />
-      <File FileName="Server/Controllers/FrivilligController.cs" Line="11" Column="30" />
-      <File FileName="Server/Models/FrivilligRepository.cs" Line="6" Column="1" />
-      <File FileName="Server/Models/IFrivilligRepository.cs" Line="12" Column="26" />
-      <File FileName="Server/Models/FrivilligDBContext.cs" Line="14" Column="1" />
-    </Files>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -50,8 +28,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.semester__projekt.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

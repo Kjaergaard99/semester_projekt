@@ -7,9 +7,9 @@ namespace semester_projekt.Client.Services
 	{
 		Task<Vagt[]?> GetLedieVagter();
 
-		Task<Vagt> BookVagt();
+		Task<int> BookVagt(Vagt vagt);
 
-
+		Task<Vagt[]?> GetMineVagter();
 
 	}
 }

@@ -10,7 +10,7 @@ namespace semester_projekt.Server.Models
 
 		public void BookShelter(Vagt vagt)
         {
-
+			db.
         }
 
 

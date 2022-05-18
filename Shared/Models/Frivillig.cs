@@ -11,6 +11,7 @@ namespace semester_projekt.Shared.Models
 
         public Frivillig()
         {
+
         }
     }
 }

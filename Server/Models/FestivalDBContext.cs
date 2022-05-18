@@ -6,7 +6,7 @@ namespace semester_projekt.Server.Models
 {
 	public class FestivalDBContext
 	{
-		private readonly NpgsqlConnection npgsqlConnection;
+		private readonly NpgsqlConnection npgsqlConnection; // ?
 
 
 

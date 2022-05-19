@@ -7,7 +7,7 @@ using System;
 using Dapper;
 using Npgsql;
 using semester_projekt.Client.Services;
-using System.Net.Http;
+using System.Net;
 using Microsoft.Net.Http;
 
 namespace semester_projekt.Server.Models
@@ -48,16 +48,18 @@ namespace semester_projekt.Server.Models
         }
 
         /*
-        public List<Vagt> GetAlleFrivillige()
+        public async Task IEnumerable<Vagt> GetAlleFrivillige()
         {
-            var sql = @"SELECT b.""bruger_id"" AS BrugerId, b.""bruger_navn"" AS BrugerNavn, b.""bruger_email"" AS BrugerEmail, b.""rolle_id"" AS RolleId,
-            FROM ""bruger""";
+            sql = @"SELECT b.""bruger_id"" AS BrugerId, b.""bruger_navn"" AS BrugerNavn, b.""bruger_email"" AS BrugerEmail, b.""rolle_id"" AS RolleId,
+            FROM ""bruger""
+            WHERE rolle_id = 1";
             Console.WriteLine("getAlleFrivillige koordinatoRepository");
             // kode; find.ToList tror jeg eller skal det være sql queries?
             using (var connection = new NpgsqlConnection(connString))
             {
                 var vagter = connection.Query<Vagt>(sql);
             }
+            return sql;
         }
         */
 

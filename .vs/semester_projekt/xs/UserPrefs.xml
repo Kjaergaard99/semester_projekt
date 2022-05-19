@@ -1,6 +1,5 @@
 ﻿<Properties StartupConfiguration="{64EE1711-386C-4068-8DC0-3E37DB55529B}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,6 +8,7 @@
             <Node name="semester_projekt.Client" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="Shared" expanded="True" />
             </Node>
@@ -28,9 +28,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.semester__projekt.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.semester__projekt.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
 </Properties>

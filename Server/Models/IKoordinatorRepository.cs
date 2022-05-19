@@ -14,7 +14,7 @@ namespace semester_projekt.Server.Models
 {
 	public interface IKoordinatorRepository
 	{
-		List<Vagt> GetAlleVagter();
+		Task<IEnumerable<Vagt>> GetAlleVagter();
 
 		void AddVagt(Vagt vagt);
 
@@ -22,7 +22,7 @@ namespace semester_projekt.Server.Models
 
 		void DeleteVagt(int id);
 
-		List<Vagt> GetAlleFrivillige();
+		Task<IEnumerable<Vagt>> GetAlleFrivillige();
 
 	}
 }

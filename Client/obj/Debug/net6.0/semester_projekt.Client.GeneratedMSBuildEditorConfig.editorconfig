@@ -11,37 +11,41 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = semester_projekt.Client
 build_property.RootNamespace = semester_projekt.Client
-build_property.ProjectDir = /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/
+build_property.ProjectDir = C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client
+build_property.MSBuildProjectDirectory = C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/App.razor]
+[C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+[C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Client/Pages/BrugerSide.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJ1Z2VyU2lkZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/_Imports.razor]
+[C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/Pages/Vagter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmFndGVyLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-d186fx1o1y
+[C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Client/Pages/KoordinatorSide.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29vcmRpbmF0b3JTaWRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-jr8g43kwko
 
-[/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-nkgtt942gz
+[C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9alvbg16zc
 
-[/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-vp1xw0sx62
+[C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1cy4z7u7ck

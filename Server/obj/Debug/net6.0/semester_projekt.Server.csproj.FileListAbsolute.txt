@@ -75,3 +75,14 @@
 /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Server/obj/Debug/net6.0/semester_projekt.Server.pdb
 /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Server/obj/Debug/net6.0/semester_projekt.Server.genruntimeconfig.cache
 /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Server/obj/Debug/net6.0/ref/semester_projekt.Server.dll
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.csproj.AssemblyReference.cache
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.AssemblyInfoInputs.cache
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.AssemblyInfo.cs
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.csproj.CoreCompileInputs.cache
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.RazorAssemblyInfo.cache
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.RazorAssemblyInfo.cs
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.dll
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\refint\semester_projekt.Server.dll
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\2. semester\SemesterProjekt\Server\obj\Debug\net6.0\semester_projekt.Server.pdb

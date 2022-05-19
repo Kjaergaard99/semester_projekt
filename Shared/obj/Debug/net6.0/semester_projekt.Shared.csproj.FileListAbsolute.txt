@@ -26,3 +26,17 @@ C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Shared/obj/D
 C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.pdb
 C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Shared/obj/Debug/net6.0/semester_projekt.Shared.genruntimeconfig.cache
 C:/Users/dawso/OneDrive/Skrivebord/eaaa/2. semester/SemesterProjekt/Shared/obj/Debug/net6.0/ref/semester_projekt.Shared.dll
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\bin\Debug\net6.0\semester_projekt.Shared.deps.json
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\bin\Debug\net6.0\semester_projekt.Shared.runtimeconfig.json
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\bin\Debug\net6.0\semester_projekt.Shared.dll
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\bin\Debug\net6.0\semester_projekt.Shared.pdb
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\semester_projekt.Shared.csproj.AssemblyReference.cache
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\semester_projekt.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\semester_projekt.Shared.AssemblyInfoInputs.cache
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\semester_projekt.Shared.AssemblyInfo.cs
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\semester_projekt.Shared.csproj.CoreCompileInputs.cache
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\semester_projekt.Shared.dll
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\refint\semester_projekt.Shared.dll
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\semester_projekt.Shared.pdb
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\semester_projekt.Shared.genruntimeconfig.cache
+C:\Users\dawso\OneDrive\Skrivebord\eaaa\vs test\Shared\obj\Debug\net6.0\ref\semester_projekt.Shared.dll

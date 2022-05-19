@@ -5365,11 +5365,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Server\\semester_projekt.Server.csproj",
+      "projectUniqueName": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Server\\semester_projekt.Server.csproj",
       "projectName": "semester_projekt.Server",
-      "projectPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Server\\semester_projekt.Server.csproj",
+      "projectPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Server\\semester_projekt.Server.csproj",
       "packagesPath": "C:\\Users\\dawso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Server\\obj\\",
+      "outputPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dawso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5386,11 +5386,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Client\\semester_projekt.Client.csproj": {
-              "projectPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Client\\semester_projekt.Client.csproj"
+            "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Client\\semester_projekt.Client.csproj": {
+              "projectPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Client\\semester_projekt.Client.csproj"
             },
-            "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Shared\\semester_projekt.Shared.csproj": {
-              "projectPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Shared\\semester_projekt.Shared.csproj"
+            "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Shared\\semester_projekt.Shared.csproj": {
+              "projectPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Shared\\semester_projekt.Shared.csproj"
             }
           }
         }

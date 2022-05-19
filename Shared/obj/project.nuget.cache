@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BySKcH2YgdV1YhtnCj+85Fz98x+ONT4gPcwVL/9kUk/Y9Ko7/gI+VomnggmAHMteF6qBGmtNIQtqfsz8KNw46A==",
+  "dgSpecHash": "PpwVCpds9Xy3fTlYAGRT48YkoPC68aa6stNhFVLON2OJ1uN5o77QeN4iDME0PJxnwMexep7wekdhYXmVn53zZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Shared\\semester_projekt.Shared.csproj",
+  "projectFilePath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Shared\\semester_projekt.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dawso\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\dawso\\.nuget\\packages\\entityframework\\6.4.0\\entityframework.6.4.0.nupkg.sha512",

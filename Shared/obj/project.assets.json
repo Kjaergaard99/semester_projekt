@@ -4615,11 +4615,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Shared\\semester_projekt.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Shared\\semester_projekt.Shared.csproj",
       "projectName": "semester_projekt.Shared",
-      "projectPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Shared\\semester_projekt.Shared.csproj",
+      "projectPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Shared\\semester_projekt.Shared.csproj",
       "packagesPath": "C:\\Users\\dawso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\2. semester\\SemesterProjekt\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\dawso\\OneDrive\\Skrivebord\\eaaa\\vs test\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dawso\\AppData\\Roaming\\NuGet\\NuGet.Config",

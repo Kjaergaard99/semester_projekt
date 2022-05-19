@@ -7,12 +7,11 @@ using System;
 using Dapper;
 using Npgsql;
 using semester_projekt.Client.Services;
-using System.Net;
 using Microsoft.Net.Http;
 
 namespace semester_projekt.Server.Models
 {
-    public class KoordinatorRepository : IKoordinatorRepository
+    internal class KoordinatorRepository : IKoordinatorRepository
     {
         string connString = "User ID=postgres;Password=qrm49zyp;Host=localhost;Port=5432;Database=2_semester_projekt;";
         string sql = "";

@@ -14,27 +14,47 @@ namespace semester_projekt.Server.Models
 {
 	internal class FrivilligRepository : IFrivilligRepository
 	{
-		FestivalDBContext db = new FestivalDBContext(); // skal denne linje være ligesom mini-projekt?
+        string connString = "User ID=postgres;Password=qrm49zyp;Host=localhost;Port=5432;Database=2_semester_projekt;";
+        string sql = "";
 
-		/*
-		public List<Vagt> GetMineVagter()
+        public async Task<IEnumerable<Vagt>> GetMineVagter(int brugerId)
         {
+            sql = $@"SELECT * FROM vagt
+            WHERE bruger_id = {brugerId}";
+            
             Console.WriteLine("getMineVagter frivilligRepository");
-			// kode; Find.ToList eller noget i den dur. Eller skal de være sql queries?
 
-		}
-		*/
-
-		/*
-		public List<Vagt> GetLedigeVagter()
-        {
-            Console.WriteLine("getLedigeVagter frivilligRepository");
-			// kode; Find.ToList eller noget i den dur
+            using (var connection = new NpgsqlConnection(connString))
+            {
+                var mineVagter = await connection.QueryAsync<Vagt>(sql);
+                return mineVagter;
+            }
         }
-		*/
 
-		public void BookVagt(Vagt vagt)
+
+		public async Task<IEnumerable<Vagt>> GetLedigeVagter()
         {
+            sql = @"SELECT * FROM vagt
+            WHERE bruger_id IS NULL"; // IS NULL eller = null?
+          
+            Console.WriteLine("getLedigeVagter frivilligRepository");
+
+            using (var connection = new NpgsqlConnection(connString))
+            {
+                var alleVagter = await connection.QueryAsync<Vagt>(sql);
+                return alleVagter;
+            }
+        }
+
+
+		public void BookVagt(int vagtId, int brugerId)
+        {
+            sql =
+                $@"UPDATE vagt
+                SET bruger_id = {brugerId}
+                WHERE vagt_id = {vagtId} AND 
+                WHERE bruger_id IS NULL"; // er denne linje kode nødvendig?
+
             Console.WriteLine("bookVagt frivilligRepository");
         }
 

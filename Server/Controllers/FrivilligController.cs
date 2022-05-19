@@ -22,13 +22,14 @@ namespace semester_projekt.Server.Controllers
 			}
         }
 
+		/*
 		[HttpGet]
 		public IEnumerable<Vagt> GetLedigeVagter()
         {
 			Console.WriteLine("getledigevagter - controller");
 			return Vagter.GetLedigeVagter();
 		}
-
+		*/
 
 
 	}

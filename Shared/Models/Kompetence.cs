@@ -7,7 +7,7 @@ namespace semester_projekt.Shared.Models
 		public string KompetenceBeskrivelse { get; set; }
 
 		public int KompetenceId { get; set; }
-		public string KompetenceBeskrivelse { get; set; }
+		// public string KompetenceBeskrivelse { get; set; }
 
 
 		public Kompetence()

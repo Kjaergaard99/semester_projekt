@@ -7,12 +7,14 @@ namespace semester_projekt.Server.Models
 	{
 		FestivalDBContext db = new FestivalDBContext(); // skal denne linje være ligesom mini-projekt?
 
+		/*
 		public List<Vagt> GetAlleVagter()
         {
             Console.WriteLine("getAlleVagter koordinatorRepository");
 			// kode; Find.ToList eller noget i den dur
 		}
-
+		*/
+		
 		public void AddVagt(Vagt vagt)
         {
             Console.WriteLine("addVagt koordinatoRepository");
@@ -32,12 +34,13 @@ namespace semester_projekt.Server.Models
 			// kode; deleteOne(id) tror jeg, eller skal det være sql queries?
 		}
 
+		/*
 		public List<Vagt> GetAlleFrivillige()
         {
 			Console.WriteLine("getAlleFrivillige koordinatoRepository");
 			// kode; find.ToList tror jeg eller skal det være sql queries?
 		}
-
+		*/
 
 
 		public KoordinatorRepository()

@@ -8,7 +8,7 @@ namespace semester_projekt.Client.Services
 {
 	public class KoordinatorService
 	{
-		private readonly
+		
 
 
 		public KoordinatorService()

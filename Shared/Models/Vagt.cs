@@ -9,6 +9,7 @@ namespace semester_projekt.Shared.Models
         public DateTime VagtSlut { get; set; }
         public int Pause { get; set; }
         public string Område { get; set; }
+        public int OpgaveId { get; set; }
         public bool ErBooket { get; set; }
         public int BrugerId { get; set; }
 

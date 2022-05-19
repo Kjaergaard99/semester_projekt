@@ -19,49 +19,85 @@ namespace semester_projekt.Server.Models
 
         // FestivalDBContext db = new FestivalDBContext(); // skal denne linje være ligesom mini-projekt?
 
-        /*
-        public List<Vagt> GetAlleVagter()
+        
+        public async Task<IEnumerable<Vagt>> GetAlleVagter()
         {
+            sql = @"SELECT * FROM vagt";
             Console.WriteLine("getAlleVagter koordinatorRepository");
-            // kode; Find.ToList eller noget i den dur
 
+            using (var connection = new NpgsqlConnection(connString))
+            {
+                var alleVagter = await connection.QueryAsync<Vagt>(sql);
+                return alleVagter;
+            }
         }
-        */
 
-        public void AddVagt(Vagt vagt)
+        public async void AddVagt(Vagt vagt)
         {
+            sql =
+                $@"INSERT INTO vagt (dato, ""vagt_start"", ""vagt_slut"", pause, område, ""opgave_id"", ""er_booket"", ""bruger_id"")
+                   VALUES({vagt.Dato}, {vagt.VagtStart}, {vagt.VagtSlut}, {vagt.Pause}, {vagt.Område}, {vagt.OpgaveId}, {vagt.ErBooket}, {vagt.BrugerId})";
             Console.WriteLine("addVagt koordinatoRepository");
-            // kode; insertOne(vagt)
+
+            using (var connection = new NpgsqlConnection(connString))
+            {
+                var opretVagt = await connection.ExecuteAsync(sql);
+            }
         }
 
 
-        public void UpdateVagt(int id)
+        public async void UpdateVagt(Vagt vagt, int vagtId)
         {
+            sql =
+                $@"UPDATE vagt
+                SET dato = {vagt.Dato}, ""vagt_start"" = {vagt.VagtStart}, ""vagt_slut"" = {vagt.VagtSlut}, pause = {vagt.Pause}, område = {vagt.Område},
+                    ""opgave_id"" = {vagt.OpgaveId}, ""er_booket"" = {vagt.ErBooket}, ""bruger_id"" = {vagt.BrugerId}
+                WHERE vagt_id = {vagtId}";
             Console.WriteLine("addVagt koordinatoRepository");
-            // kode; updateOne(id)
+
+            using (var connection = new NpgsqlConnection(connString))
+            {
+                var updateVagt = await connection.ExecuteAsync(sql);
+            }
         }
 
-        public void DeleteVagt(int id)
+        public void DeleteVagt(int vagtId)
         {
+            sql =
+                $@"DELETE FROM vagt
+                WHERE vagt_id = {vagtId}";
             Console.WriteLine("addVagt koordinatoRepository");
-            // kode; deleteOne(id) tror jeg, eller skal det være sql queries?
         }
 
-        /*
-        public async Task IEnumerable<Vagt> GetAlleFrivillige()
+        
+        public async Task<IEnumerable<Vagt>> GetAlleFrivillige()
         {
             sql = @"SELECT b.""bruger_id"" AS BrugerId, b.""bruger_navn"" AS BrugerNavn, b.""bruger_email"" AS BrugerEmail, b.""rolle_id"" AS RolleId,
             FROM ""bruger""
             WHERE rolle_id = 1";
             Console.WriteLine("getAlleFrivillige koordinatoRepository");
-            // kode; find.ToList tror jeg eller skal det være sql queries?
+
             using (var connection = new NpgsqlConnection(connString))
             {
-                var vagter = connection.Query<Vagt>(sql);
+                var alleFrivillige = await connection.QueryAsync<Vagt>(sql);
+                return alleFrivillige;
             }
-            return sql;
         }
-        */
+
+        // er ikke sikker på om dette er et krav?
+        public async void addOpgave(Opgave opgave)
+        {
+            sql =
+                $@"INSERT INTO opgave (""opgave_beskrivelse"")
+                    VALUES ({opgave.OpgaveBeskrivelse})";
+            Console.WriteLine("addOpgave koordinatoRepository");
+
+            using (var connection = new NpgsqlConnection(connString))
+            {
+                var opretOpgave = await connection.ExecuteAsync(sql);
+            }
+        }
+        
 
         public KoordinatorRepository()
         {

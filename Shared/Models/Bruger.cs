@@ -10,7 +10,10 @@ namespace semester_projekt.Shared.Models
         public string BrugerNavn { get; set; }
         public int BrugerEmail { get; set; }
         public string BrugerPassword { get; set; }
+        public int TelefonNummer { get; set; }
         public int RolleId { get; set; }
+
+        // public DateOnly FødselsDato { get; set; } // alder skal være 16+
 
 
         public Bruger()

@@ -14,15 +14,15 @@ namespace semester_projekt.Server.Models
 {
 	public interface IKoordinatorRepository
 	{
-		// List<Vagt> GetAlleVagter();
+		List<Vagt> GetAlleVagter();
 
 		void AddVagt(Vagt vagt);
 
-		void UpdateVagt(int id);
+		void UpdateVagt(Vagt vagt, int vagtId);
 
 		void DeleteVagt(int id);
 
-		// List<Vagt> GetAlleFrivillige();
+		List<Vagt> GetAlleFrivillige();
 
 	}
 }

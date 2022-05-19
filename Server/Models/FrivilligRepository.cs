@@ -41,8 +41,8 @@ namespace semester_projekt.Server.Models
 
             using (var connection = new NpgsqlConnection(connString))
             {
-                var alleVagter = await connection.QueryAsync<Vagt>(sql);
-                return alleVagter;
+                var ledigeVagter = await connection.QueryAsync<Vagt>(sql);
+                return ledigeVagter;
             }
         }
 

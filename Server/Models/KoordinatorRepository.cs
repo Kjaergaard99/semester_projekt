@@ -22,6 +22,7 @@ namespace semester_projekt.Server.Models
         public async Task<IEnumerable<Vagt>> GetAlleVagter()
         {
             sql = @"SELECT * FROM vagt";
+            
             Console.WriteLine("getAlleVagter koordinatorRepository");
 
             using (var connection = new NpgsqlConnection(connString))
@@ -36,6 +37,7 @@ namespace semester_projekt.Server.Models
             sql =
                 $@"INSERT INTO vagt (dato, ""vagt_start"", ""vagt_slut"", pause, område, ""opgave_id"", ""er_booket"", ""bruger_id"")
                    VALUES({vagt.Dato}, {vagt.VagtStart}, {vagt.VagtSlut}, {vagt.Pause}, {vagt.Område}, {vagt.OpgaveId}, {vagt.ErBooket}, {vagt.BrugerId})";
+            
             Console.WriteLine("addVagt koordinatoRepository");
 
             using (var connection = new NpgsqlConnection(connString))
@@ -52,6 +54,7 @@ namespace semester_projekt.Server.Models
                 SET dato = {vagt.Dato}, ""vagt_start"" = {vagt.VagtStart}, ""vagt_slut"" = {vagt.VagtSlut}, pause = {vagt.Pause}, område = {vagt.Område},
                     ""opgave_id"" = {vagt.OpgaveId}, ""er_booket"" = {vagt.ErBooket}, ""bruger_id"" = {vagt.BrugerId}
                 WHERE vagt_id = {vagtId}";
+            
             Console.WriteLine("addVagt koordinatoRepository");
 
             using (var connection = new NpgsqlConnection(connString))
@@ -65,6 +68,7 @@ namespace semester_projekt.Server.Models
             sql =
                 $@"DELETE FROM vagt
                 WHERE vagt_id = {vagtId}";
+            
             Console.WriteLine("addVagt koordinatoRepository");
         }
 
@@ -74,6 +78,7 @@ namespace semester_projekt.Server.Models
             sql = @"SELECT b.""bruger_id"" AS BrugerId, b.""bruger_navn"" AS BrugerNavn, b.""bruger_email"" AS BrugerEmail, b.""rolle_id"" AS RolleId,
             FROM ""bruger""
             WHERE rolle_id = 1";
+            
             Console.WriteLine("getAlleFrivillige koordinatoRepository");
 
             using (var connection = new NpgsqlConnection(connString))
@@ -89,6 +94,7 @@ namespace semester_projekt.Server.Models
             sql =
                 $@"INSERT INTO opgave (""opgave_beskrivelse"")
                     VALUES ({opgave.OpgaveBeskrivelse})";
+            
             Console.WriteLine("addOpgave koordinatoRepository");
 
             using (var connection = new NpgsqlConnection(connString))

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.ResponseCompression;
+﻿using semester_projekt.Shared.Models;
+using Dapper;
+using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
 

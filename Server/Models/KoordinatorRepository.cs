@@ -1,51 +1,69 @@
 ﻿using System;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
 using semester_projekt.Shared.Models;
+using semester_projekt.Server.Models;
+using System;
+using Dapper;
+using Npgsql;
+using semester_projekt.Client.Services;
+using System.Net.Http;
+using Microsoft.Net.Http;
 
 namespace semester_projekt.Server.Models
 {
-	public class KoordinatorRepository : IKoordinatorRepository
-	{
-		FestivalDBContext db = new FestivalDBContext(); // skal denne linje være ligesom mini-projekt?
+    public class KoordinatorRepository : IKoordinatorRepository
+    {
+        string connString = "User ID=postgres;Password=qrm49zyp;Host=localhost;Port=5432;Database=2_semester_projekt;";
+        string sql = "";
 
-		/*
-		public List<Vagt> GetAlleVagter()
+        // FestivalDBContext db = new FestivalDBContext(); // skal denne linje være ligesom mini-projekt?
+
+        /*
+        public List<Vagt> GetAlleVagter()
         {
             Console.WriteLine("getAlleVagter koordinatorRepository");
-			// kode; Find.ToList eller noget i den dur
-		}
-		*/
-		
-		public void AddVagt(Vagt vagt)
+            // kode; Find.ToList eller noget i den dur
+
+        }
+        */
+
+        public void AddVagt(Vagt vagt)
         {
             Console.WriteLine("addVagt koordinatoRepository");
-			// kode; insertOne(vagt)
+            // kode; insertOne(vagt)
         }
 
 
-		public void UpdateVagt(int id)
-		{
-			Console.WriteLine("addVagt koordinatoRepository");
-			// kode; updateOne(id)
-		}
-
-		public void DeleteVagt(int id)
-		{
-			Console.WriteLine("addVagt koordinatoRepository");
-			// kode; deleteOne(id) tror jeg, eller skal det være sql queries?
-		}
-
-		/*
-		public List<Vagt> GetAlleFrivillige()
+        public void UpdateVagt(int id)
         {
-			Console.WriteLine("getAlleFrivillige koordinatoRepository");
-			// kode; find.ToList tror jeg eller skal det være sql queries?
-		}
-		*/
+            Console.WriteLine("addVagt koordinatoRepository");
+            // kode; updateOne(id)
+        }
 
+        public void DeleteVagt(int id)
+        {
+            Console.WriteLine("addVagt koordinatoRepository");
+            // kode; deleteOne(id) tror jeg, eller skal det være sql queries?
+        }
 
-		public KoordinatorRepository()
-		{
-		}
-	}
+        /*
+        public List<Vagt> GetAlleFrivillige()
+        {
+            var sql = @"SELECT b.""bruger_id"" AS BrugerId, b.""bruger_navn"" AS BrugerNavn, b.""bruger_email"" AS BrugerEmail, b.""rolle_id"" AS RolleId,
+            FROM ""bruger""";
+            Console.WriteLine("getAlleFrivillige koordinatoRepository");
+            // kode; find.ToList tror jeg eller skal det være sql queries?
+            using (var connection = new NpgsqlConnection(connString))
+            {
+                var vagter = connection.Query<Vagt>(sql);
+            }
+        }
+        */
+
+        public KoordinatorRepository()
+        {
+        }
+    }
 }
 

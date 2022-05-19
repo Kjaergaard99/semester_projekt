@@ -29,7 +29,13 @@ namespace semester_projekt.Server.Models
 		public void DeleteVagt(int id)
 		{
 			Console.WriteLine("addVagt koordinatoRepository");
-			// kode; deleteOne(id)
+			// kode; deleteOne(id) tror jeg, eller skal det være sql queries?
+		}
+
+		public List<Vagt> GetAlleFrivillige()
+        {
+			Console.WriteLine("getAlleFrivillige koordinatoRepository");
+			// kode; find.ToList tror jeg eller skal det være sql queries?
 		}
 
 

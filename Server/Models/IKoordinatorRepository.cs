@@ -13,6 +13,8 @@ namespace semester_projekt.Server.Models
 
 		void DeleteVagt(int id);
 
+		List<Vagt> GetAlleFrivillige();
+
 	}
 }
 

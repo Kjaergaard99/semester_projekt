@@ -11,10 +11,10 @@ namespace semester_projekt.Server.Models
 		public List<Vagt> GetMineVagter()
         {
             Console.WriteLine("getMineVagter frivilligRepository");
-			// kode; Find.ToList eller noget i den dur
+			// kode; Find.ToList eller noget i den dur. Eller skal de være sql queries?
 		}
 
-		public List<Vagt> GetLedieVagter()
+		public List<Vagt> GetLedigeVagter()
         {
             Console.WriteLine("getLedigeVagter frivilligRepository");
 			// kode; Find.ToList eller noget i den dur

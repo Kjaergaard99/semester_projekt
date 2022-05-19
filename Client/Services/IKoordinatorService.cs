@@ -13,6 +13,8 @@ namespace semester_projekt.Client.Services
 
 		Task<int> UpdateVagt(Vagt vagt);
 
+		Task<Vagt[]?> GetAlleFrivillige();
+
 	}
 }
 

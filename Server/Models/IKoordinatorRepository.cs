@@ -22,7 +22,7 @@ namespace semester_projekt.Server.Models
 
 		void DeleteVagt(int id);
 
-		Task<IEnumerable<Vagt>> GetAlleFrivillige();
+		Task<IEnumerable<Bruger>> GetAlleFrivillige();
 
 	}
 }

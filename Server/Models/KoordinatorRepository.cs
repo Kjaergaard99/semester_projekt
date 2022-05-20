@@ -73,7 +73,7 @@ namespace semester_projekt.Server.Models
         }
 
         
-        public async Task<IEnumerable<Vagt>> GetAlleFrivillige()
+        public async Task<IEnumerable<Bruger>> GetAlleFrivillige()
         {
             sql = @"SELECT b.""bruger_id"" AS BrugerId, b.""bruger_navn"" AS BrugerNavn, b.""bruger_email"" AS BrugerEmail, b.""rolle_id"" AS RolleId,
             FROM ""bruger""
@@ -83,7 +83,7 @@ namespace semester_projekt.Server.Models
 
             using (var connection = new NpgsqlConnection(connString))
             {
-                var alleFrivillige = await connection.QueryAsync<Vagt>(sql);
+                var alleFrivillige = await connection.QueryAsync<Bruger>(sql);
                 return alleFrivillige;
             }
         }
@@ -106,6 +106,7 @@ namespace semester_projekt.Server.Models
 
         public KoordinatorRepository()
         {
+            Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
         }
     }
 }

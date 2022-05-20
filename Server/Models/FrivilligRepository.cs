@@ -27,7 +27,7 @@ namespace semester_projekt.Server.Models
             using (var connection = new NpgsqlConnection(connString))
             {
                 var mineVagter = await connection.QueryAsync<Vagt>(sql);
-                return mineVagter;
+                return mineVagter.ToList();
             }
         }
 
@@ -42,7 +42,7 @@ namespace semester_projekt.Server.Models
             using (var connection = new NpgsqlConnection(connString))
             {
                 var ledigeVagter = await connection.QueryAsync<Vagt>(sql);
-                return ledigeVagter;
+                return ledigeVagter.ToList();
             }
         }
 

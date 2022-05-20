@@ -18,11 +18,13 @@ namespace semester_projekt.Server.Models
 
 		void AddVagt(Vagt vagt);
 
-		void UpdateVagt(Vagt vagt, int vagtId);
+		void UpdateVagt(int vagtId, Vagt vagt);
 
 		void DeleteVagt(int id);
 
 		Task<IEnumerable<Bruger>> GetAlleFrivillige();
+
+		void AddOpgave(Opgave opgave);
 
 	}
 }

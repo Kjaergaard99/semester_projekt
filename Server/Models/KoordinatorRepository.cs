@@ -38,7 +38,7 @@ namespace semester_projekt.Server.Models
                 $@"INSERT INTO vagt (dato, ""vagt_start"", ""vagt_slut"", pause, område, ""opgave_id"", ""er_booket"", ""bruger_id"")
                    VALUES({vagt.Dato}, {vagt.VagtStart}, {vagt.VagtSlut}, {vagt.Pause}, {vagt.Område}, {vagt.OpgaveId}, {vagt.ErBooket}, {vagt.BrugerId})";
             
-            Console.WriteLine("addVagt koordinatoRepository");
+            Console.WriteLine("addVagt koordinatorRepository");
 
             using (var connection = new NpgsqlConnection(connString))
             {
@@ -47,7 +47,7 @@ namespace semester_projekt.Server.Models
         }
 
 
-        public async void UpdateVagt(Vagt vagt, int vagtId)
+        public async void UpdateVagt(int vagtId, Vagt vagt)
         {
             sql =
                 $@"UPDATE vagt
@@ -55,7 +55,7 @@ namespace semester_projekt.Server.Models
                     ""opgave_id"" = {vagt.OpgaveId}, ""er_booket"" = {vagt.ErBooket}, ""bruger_id"" = {vagt.BrugerId}
                 WHERE vagt_id = {vagtId}";
             
-            Console.WriteLine("addVagt koordinatoRepository");
+            Console.WriteLine("addVagt koordinatorRepository");
 
             using (var connection = new NpgsqlConnection(connString))
             {
@@ -69,7 +69,7 @@ namespace semester_projekt.Server.Models
                 $@"DELETE FROM vagt
                 WHERE vagt_id = {vagtId}";
             
-            Console.WriteLine("addVagt koordinatoRepository");
+            Console.WriteLine("addVagt koordinatorRepository");
         }
 
         
@@ -79,7 +79,7 @@ namespace semester_projekt.Server.Models
             FROM ""bruger""
             WHERE rolle_id = 1";
             
-            Console.WriteLine("getAlleFrivillige koordinatoRepository");
+            Console.WriteLine("getAlleFrivillige koordinatorRepository");
 
             using (var connection = new NpgsqlConnection(connString))
             {
@@ -89,13 +89,13 @@ namespace semester_projekt.Server.Models
         }
 
         // er ikke sikker på om dette er et krav?
-        public async void addOpgave(Opgave opgave)
+        public async void AddOpgave(Opgave opgave)
         {
             sql =
                 $@"INSERT INTO opgave (""opgave_beskrivelse"")
                     VALUES ({opgave.OpgaveBeskrivelse})";
             
-            Console.WriteLine("addOpgave koordinatoRepository");
+            Console.WriteLine("addOpgave koordinatorRepository");
 
             using (var connection = new NpgsqlConnection(connString))
             {

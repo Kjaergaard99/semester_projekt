@@ -47,7 +47,7 @@ namespace semester_projekt.Server.Models
         }
 
 
-		public void BookVagt(int vagtId, int brugerId)
+		public async void BookVagt(int vagtId, int brugerId)
         {
             sql =
                 $@"UPDATE vagt
@@ -56,13 +56,19 @@ namespace semester_projekt.Server.Models
                 WHERE bruger_id IS NULL"; // er denne linje kode nødvendig?
 
             Console.WriteLine("bookVagt frivilligRepository");
+
+            using (var connection = new NpgsqlConnection(connString))
+            {
+                var bookVagt = await connection.ExecuteAsync(sql);
+            }
         }
 
 
 
 		public FrivilligRepository()
 		{
-		}
+            Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
+        }
 	}
 }
 

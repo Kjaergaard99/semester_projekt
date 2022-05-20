@@ -14,7 +14,8 @@ using Microsoft.Net.Http;
 namespace semester_projekt.Server.Controllers
 {
 	[ApiController]
-	[Route("api/ledigevagter")]
+	[Route("api/frivillig")]
+
 	public class FrivilligController : ControllerBase
 	{
 		private readonly IFrivilligRepository Vagter = new FrivilligRepository();
@@ -28,14 +29,13 @@ namespace semester_projekt.Server.Controllers
 			}
         }
 
-		/*
+
 		[HttpGet]
-		public IEnumerable<Vagt> GetLedigeVagter()
+		public async Task<IEnumerable<Vagt>> GetLedigeVagter()
         {
 			Console.WriteLine("getledigevagter - controller");
-			return Vagter.GetLedigeVagter();
+			return await Vagter.GetLedigeVagter();
 		}
-		*/
 
 
 	}

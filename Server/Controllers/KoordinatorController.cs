@@ -13,7 +13,7 @@ using Microsoft.Net.Http;
 namespace semester_projekt.Server.Controllers
 {
     [ApiController]
-    [Route("api/vagter")]
+    [Route("api/koordinator")]
 
     public class KoordinatorController : ControllerBase
     {
@@ -34,6 +34,36 @@ namespace semester_projekt.Server.Controllers
             Console.WriteLine("getAlleVagter - koordinatorController");
             return await Vagter.GetAlleVagter();
         }
+
+
+        [HttpPost]
+        public void AddVagt(Vagt vagt)
+        {
+            Console.WriteLine("addVagt - koordinatorController");
+            Vagter.AddVagt(vagt);
+        }
+
+        [HttpPost]
+        public void UpdateVagt(int vagtId, Vagt vagt)
+        {
+            Console.WriteLine("updateVagt - koordinatorController");
+            Vagter.UpdateVagt(vagtId, vagt);
+        }
+
+        [HttpDelete]
+        public void DeleteVagt(int vagtId)
+        {
+            Console.WriteLine("deleteVagt - koordinatorController");
+            Vagter.DeleteVagt(vagtId);
+        }
+
+
+        [HttpPost]
+        public void AddOpgave(Opgave opgave)
+        {
+            Console.WriteLine("addOpgave - koordinatorController");
+        }
+
 
         [HttpGet]
         public async Task<IEnumerable<Bruger>> GetAlleFrivillige()

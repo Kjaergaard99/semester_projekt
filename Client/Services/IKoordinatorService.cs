@@ -11,9 +11,11 @@ namespace semester_projekt.Client.Services
 
 		Task<int> DeleteVagt(int id);
 
-		Task<int> UpdateVagt(Vagt vagt);
+		Task<int> UpdateVagt(int vagtId, Vagt vagt);
 
-		Task<Vagt[]?> GetAlleFrivillige();
+		Task<Bruger[]?> GetAlleFrivillige();
+
+		Task<int> AddOpgave(Opgave opgave);
 
 	}
 }

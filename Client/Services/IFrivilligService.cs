@@ -5,12 +5,11 @@ namespace semester_projekt.Client.Services
 {
 	public interface IFrivilligService
 	{
-		Task<Vagt[]?> GetLedieVagter();
-
-		Task<int> BookVagt(Vagt vagt);
+		Task<Vagt[]?> GetLedigeVagter();
 
 		Task<Vagt[]?> GetMineVagter();
 
+		Task<int> BookVagt(Vagt vagt);
 	}
 }
 

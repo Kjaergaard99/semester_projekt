@@ -8,21 +8,21 @@ namespace semester_projekt.Client.Services
     {
         private readonly HttpClient httpClient;
 
-        public Task<Vagt[]?> GetMineVagter()
+        public async Task<Vagt[]?> GetMineVagter()
         {
-            var result = httpClient.GetFromJsonAsync<Vagt[]>("api/egnevagter");
+            var result = await httpClient.GetFromJsonAsync<Vagt[]>("api/frivillig");
             return result;
         }
         
-        public Task<Vagt[]?> GetLedieVagter()
+        public async Task<Vagt[]?> GetLedigeVagter()
         {
-            var result = httpClient.GetFromJsonAsync<Vagt[]>("api/ledigevagter");
+            var result = await httpClient.GetFromJsonAsync<Vagt[]>("api/frivillig");
             return result;
         }
 
         public async Task<int> BookVagt(Vagt vagt)
         {
-            var response = await httpClient.PostAsJsonAsync("api/egnevagter", vagt);
+            var response = await httpClient.PostAsJsonAsync("api/frivillig", vagt);
             var responseStatusCode = response.StatusCode;
             return (int)responseStatusCode;
         }
@@ -30,6 +30,7 @@ namespace semester_projekt.Client.Services
 
         public FrivilligService()
         {
+
         }
     }
 }

@@ -28,7 +28,7 @@ namespace semester_projekt.Server.Models
             using (var connection = new NpgsqlConnection(connString))
             {
                 var alleVagter = await connection.QueryAsync<Vagt>(sql);
-                return alleVagter;
+                return alleVagter.ToList();
             }
         }
 
@@ -84,7 +84,7 @@ namespace semester_projekt.Server.Models
             using (var connection = new NpgsqlConnection(connString))
             {
                 var alleFrivillige = await connection.QueryAsync<Bruger>(sql);
-                return alleFrivillige;
+                return alleFrivillige.ToList();
             }
         }
 

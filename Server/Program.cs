@@ -1,5 +1,4 @@
-﻿using semester_projekt.Shared.Models;
-using Dapper;
+﻿using semester_projekt.Server.Models;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-
+builder.Services.AddScoped<IKoordinatorRepository, KoordinatorRepository>();
+builder.Services.AddScoped<IFrivilligRepository, FrivilligRepository>();
 
 var app = builder.Build();
 

@@ -17,6 +17,7 @@ namespace semester_projekt.Server.Models
         string connString = "User ID=postgres;Password=qrm49zyp;Host=localhost;Port=5432;Database=2_semester_projekt;";
         string sql = "";
 
+
         public async Task<IEnumerable<Vagt>> GetMineVagter(int brugerId)
         {
             sql = $@"SELECT * FROM vagt

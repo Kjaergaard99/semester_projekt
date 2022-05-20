@@ -75,8 +75,7 @@ namespace semester_projekt.Server.Models
         
         public async Task<IEnumerable<Bruger>> GetAlleFrivillige()
         {
-            sql = @"SELECT b.""bruger_id"" AS BrugerId, b.""bruger_navn"" AS BrugerNavn, b.""bruger_email"" AS BrugerEmail, b.""rolle_id"" AS RolleId,
-            FROM ""bruger""
+            sql = @"SELECT * FROM bruger
             WHERE rolle_id = 1";
             
             Console.WriteLine("getAlleFrivillige koordinatorRepository");

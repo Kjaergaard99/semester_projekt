@@ -29,14 +29,26 @@ namespace semester_projekt.Server.Controllers
 			}
         }
 
+		[HttpGet]
+		public async Task<IEnumerable<Vagt>> GetMineVagter(int brugerId)
+		{
+			Console.WriteLine("getledigevagter - frivilligController");
+			return await Vagter.GetMineVagter(brugerId);
+		}
 
 		[HttpGet]
 		public async Task<IEnumerable<Vagt>> GetLedigeVagter()
         {
-			Console.WriteLine("getledigevagter - controller");
+			Console.WriteLine("getledigevagter - frivilligController");
 			return await Vagter.GetLedigeVagter();
 		}
 
+		[HttpPost]
+		public void BookVagt(int vagtId, int brugerId)
+		{
+			Console.WriteLine("addVagt - frivilligController");
+			Vagter.BookVagt(vagtId, brugerId);
+		}
 
 	}
 }

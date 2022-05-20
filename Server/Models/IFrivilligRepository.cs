@@ -19,8 +19,6 @@ namespace semester_projekt.Server.Models
 		Task<IEnumerable<Vagt>> GetLedigeVagter(); // metode til at se alle de nuværende ledige vagter
 
 		void BookVagt(int vagtId, int brugerId); // metode til at booke en vagt
-
-
-	}
+    }
 }
 

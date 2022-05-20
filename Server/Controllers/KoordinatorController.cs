@@ -57,13 +57,11 @@ namespace semester_projekt.Server.Controllers
             Vagter.DeleteVagt(vagtId);
         }
 
-
         [HttpPost]
         public void AddOpgave(Opgave opgave)
         {
             Console.WriteLine("addOpgave - koordinatorController");
         }
-
 
         [HttpGet]
         public async Task<IEnumerable<Bruger>> GetAlleFrivillige()

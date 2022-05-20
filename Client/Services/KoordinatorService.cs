@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http.Json;
 using semester_projekt.Shared.Models;
+using semester_projekt.Client.Services;
 using Dapper;
 using Npgsql;
 
@@ -25,7 +26,7 @@ namespace semester_projekt.Client.Services
 
         public async Task<int> UpdateVagt(int vagtId, Vagt vagt)
         {
-            var response = await httpClient.PostAsJsonAsync("api/koordinator", vagtId, vagt); // hvad skal der stå her?
+            var response = await httpClient.PostAsJsonAsync("api/koordinator", vagtId); // hvad skal der stå her?
             var responseStatusCode = response.StatusCode;
             return (int)responseStatusCode;
         }
@@ -50,9 +51,10 @@ namespace semester_projekt.Client.Services
             return (int)responseStatusCode;
         }
 
-        public KoordinatorService()
-		{
-		}
+        public KoordinatorService(HttpClient httpClient)
+        {
+            this.httpClient = httpClient;
+        }
 	}
 }
 

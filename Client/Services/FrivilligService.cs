@@ -28,9 +28,9 @@ namespace semester_projekt.Client.Services
         }
 
 
-        public FrivilligService()
+        public FrivilligService(HttpClient httpClient)
         {
-
+            this.httpClient = httpClient;
         }
     }
 }

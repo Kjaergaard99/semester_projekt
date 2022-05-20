@@ -12,8 +12,7 @@
 <h3>Vagter</h3>
 
 <div>
-
-    <table>
+    <table class="vagter">
         <tr>
             <th>Vagt ID</th>
             <th>Dato</th>
@@ -47,11 +46,25 @@
             <td>False</td>
             <td>Null</td>
         </tr>
-
-
-
     </table>
 
+    <table class="frivillige">
+        @foreach (var bruger in Brugere)
+        {
+            <tr>
+                <th>Bruger ID</th>
+                <th>Bruger Navn</th>
+                <th>Bruger Email</th>
+                <th>Rolle ID</th>
+            </tr>
+            <tr>
+                <td>@bruger.BrugerId</td>
+                <td>@bruger.BrugerNavn</td>
+                <td>@bruger.BrugerEmail</td>
+                <td>@bruger.RolleId</td>
+            </tr>
+        }
+    </table>
 
 
 </div>
@@ -59,7 +72,17 @@
 
 
 @code {
+    private List<Bruger> Brugere = new List<Bruger>();
 
+    private Bruger Bruger = new Bruger();
+
+    [Inject]
+    public IKoordinatorService KoordinatorService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Brugere = (await KoordinatorService.GetAlleFrivillige()).ToList();
+    }
 
 
 }

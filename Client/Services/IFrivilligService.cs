@@ -12,4 +12,3 @@ namespace semester_projekt.Client.Services
 		Task<int> BookVagt(Vagt vagt);
 	}
 }
-

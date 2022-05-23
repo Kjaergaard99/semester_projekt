@@ -40,7 +40,7 @@ namespace semester_projekt.Client.Services
 
         public Task<Bruger[]?> GetAlleFrivillige()
         {
-            var result = httpClient.GetFromJsonAsync<Bruger[]>("api/koordinator/getFrivillige");
+            var result = httpClient.GetFromJsonAsync<Bruger[]>("api/koordinator/getfrivillige");
             return result;
         }
 

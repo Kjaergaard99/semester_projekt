@@ -65,7 +65,7 @@ namespace semester_projekt.Server.Controllers
             Vagter.AddOpgave(opgave);
         }
 
-        [HttpGet ("getFrvillige")]
+        [HttpGet ("getfrivillige")]
         public async Task<IEnumerable<Bruger>> GetAlleFrivillige() // http get på alle frivillige i systemet
         {
             Console.WriteLine("getAlleFrivillige - koordinatorController");

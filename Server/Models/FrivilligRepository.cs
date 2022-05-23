@@ -36,7 +36,7 @@ namespace semester_projekt.Server.Models
 		public async Task<IEnumerable<Vagt>> GetLedigeVagter()
         {
             sql = @"SELECT * FROM vagt
-            WHERE bruger_id IS NULL"; // IS NULL eller = null?
+            WHERE bruger_id IS NULL"; 
           
             Console.WriteLine("getLedigeVagter frivilligRepository");
 
@@ -54,7 +54,7 @@ namespace semester_projekt.Server.Models
                 $@"UPDATE vagt
                 SET bruger_id = {brugerId}
                 WHERE vagt_id = {vagtId} AND 
-                WHERE bruger_id IS NULL"; // er denne linje kode nødvendig?
+                WHERE bruger_id IS NULL";
 
             Console.WriteLine("bookVagt frivilligRepository");
 

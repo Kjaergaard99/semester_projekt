@@ -13,39 +13,31 @@
 
 <div>
     <table class="vagter">
-        <tr>
-            <th>Vagt ID</th>
-            <th>Dato</th>
-            <th>Vagt start</th>
-            <th>Vagt slut</th>
-            <th>Pause</th>
-            <th>Område</th>
-            <th>Opgave ID</th> <!--Dette skal evt laves til en join m. OpgaveBeskrivelse i stedet-->
-            <th>Er booket?</th>
-            <th>Bruger ID</th>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>2022-01-01</td>
-            <td>10:00:00</td>
-            <td>12:00:00</td>
-            <td>0</td>
-            <td>Cafe</td>
-            <td>1</td>
-            <td>True</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>2022-02-02</td>
-            <td>20:00:00</td>
-            <td>22:00:00</td>
-            <td>0</td>
-            <td>Billetkontrol</td>
-            <td>1</td>
-            <td>False</td>
-            <td>Null</td>
-        </tr>
+        @foreach (var vagt in Vagter)
+        {
+            <tr>
+                <th>Vagt ID</th>
+                <th>Dato</th>
+                <th>Vagt start</th>
+                <th>Vagt slut</th>
+                <th>Pause</th>
+                <th>Område</th>
+                <th>Opgave ID</th> <!--Dette skal evt laves til en join m. OpgaveBeskrivelse i stedet-->
+                <th>Er booket?</th>
+                <th>Bruger ID</th>
+            </tr>
+            <tr>
+                <td>@vagt.VagtId</td>
+                <td>@vagt.Dato</td>
+                <td>@vagt.VagtStart</td>
+                <td>@vagt.VagtSlut</td>
+                <td>@vagt.Pause</td>
+                <td>@vagt.Område</td>
+                <td>@vagt.OpgaveId</td>
+                <td>@vagt.ErBooket</td>
+                <td>@vagt.BrugerId</td>
+            </tr>
+        }
     </table>
 
     <table class="frivillige">
@@ -72,16 +64,19 @@
 
 
 @code {
-    private List<Bruger> Brugere = new List<Bruger>(); // definerer en ny liste af brugere
+    private List<Vagt> Vagter = new List<Vagt>();
+    private Vagt Vagt = new Vagt();
 
+    private List<Bruger> Brugere = new List<Bruger>(); // definerer en ny liste af brugere
     private Bruger Bruger = new Bruger(); // definerer en ny bruger
 
     [Inject]
-    public IKoordinatorService KoordinatorService { get; set; } // laver en instans af vores interface, 
+    public IKoordinatorService KoordinatorService { get; set; } // laver en instans af vores interface,
                                                                 // nu kan metoderne i interfacet bruges
 
     protected override async Task OnInitializedAsync()
     {
+        Vagter = (await KoordinatorService.GetAlleVagter()).ToList();
         Brugere = (await KoordinatorService.GetAlleFrivillige()).ToList(); // populater vores liste af brugere v hjælp af,
                                                                            // getAlleFrivillige() metoden + toList
     }

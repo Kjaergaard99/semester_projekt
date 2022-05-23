@@ -8,16 +8,35 @@
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
   <MonoDevelop.Ide.ItemProperties.semester__projekt.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../../../usr/local/share/dotnet/sdk/6.0.203/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Client/Pages/KoordinatorSide.razor">
     <Files>
-      <File FileName="Server/Models/KoordinatorRepository.cs" Line="1" Column="1" />
-      <File FileName="Server/Models/IFrivilligRepository.cs" Line="7" Column="14" />
-      <File FileName="../../../../../../../../usr/local/share/dotnet/sdk/6.0.203/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets" Line="427" Column="45" />
+      <File FileName="Client/Services/IKoordinatorService.cs" Line="18" Column="92" />
+      <File FileName="Client/Services/KoordinatorService.cs" Line="27" Column="65" />
+      <File FileName="Server/Models/IKoordinatorRepository.cs" Line="27" Column="68" />
+      <File FileName="Server/Models/KoordinatorRepository.cs" Line="23" Column="10" />
+      <File FileName="Server/Controllers/KoordinatorController.cs" Line="64" Column="46" />
+      <File FileName="Client/Services/IFrivilligService.cs" Line="12" Column="66" />
+      <File FileName="Client/Services/FrivilligService.cs" Line="31" Column="55" />
+      <File FileName="Server/Models/IFrivilligRepository.cs" Line="25" Column="1" />
+      <File FileName="Server/Models/FrivilligRepository.cs" Line="50" Column="1" />
+      <File FileName="Server/Controllers/FrivilligController.cs" Line="11" Column="26" />
+      <File FileName="Client/Pages/KoordinatorSide.razor" Line="69" Column="1" />
+      <File FileName="Shared/Models/Bruger.cs" Line="11" Column="22" />
+      <File FileName="Client/Shared/NavMenu.razor" Line="21" Column="15" />
+      <File FileName="Client/Pages/BrugerSide.razor" Line="1" Column="1" />
+      <File FileName="Client/Pages/KoordinatorSide.razor.css" Line="6" Column="2" />
+      <File FileName="Client/Program.cs" Line="8" Column="33" />
+      <File FileName="Shared/Models/Vagt.cs" Line="17" Column="10" />
+      <File FileName="Client/Pages/Index.razor" Line="1" Column="1" />
+      <File FileName="Server/Program.cs" Line="39" Column="1" />
+      <File FileName="Shared/Models/Kompetence.cs" Line="10" Column="1" />
+      <File FileName="Shared/Models/Opgave.cs" Line="11" Column="4" />
+      <File FileName="../../../../../../../../usr/local/share/dotnet/sdk/6.0.203/Microsoft.Common.CurrentVersion.targets" Line="4698" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="semester_projekt" expanded="True" selected="True">
+          <Node name="semester_projekt" expanded="True">
             <Node name="semester_projekt.Client" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Pages" expanded="True">
@@ -29,11 +48,10 @@
               </Node>
             </Node>
             <Node name="semester_projekt.Server" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
-            <Node name="semester_projekt.Shared" expanded="True">
-              <Node name="Models" expanded="True" />
-            </Node>
+            <Node name="semester_projekt.Shared" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -43,5 +61,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -219,14 +219,14 @@
       "netstandard.dll": "sha256-qpOz\/RBwhlIYfaE2GDEmjiproxkvSf2b9GeqHxvH+lg=",
       "System.Private.CoreLib.dll": "sha256-sfzSZ3YKC2rpF77TVOKLuPgQag93QXr9U4AUc9d\/LKA=",
       "semester_projekt.Shared.dll": "sha256-sCgDAGSR1BCJRhKCIsiJ3tsZz\/FJU6JL2RedNPu6Ys8=",
-      "semester_projekt.Client.dll": "sha256-IaTXOeLhWgWZPjFJhtBHbWbQIxwW4VEX5nz0HC+cVrY="
+      "semester_projekt.Client.dll": "sha256-L\/1ojizeIsWRIaTRu5vJ7pbQsghJwsVT03A5JAWk92c="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "semester_projekt.Shared.pdb": "sha256-GRp\/vxZxQ7Guj2oVYPMA1b+VEivO2Ui4jVozVhQoycY=",
-      "semester_projekt.Client.pdb": "sha256-PmM8Ufc5hNFsyMGVchKrOUfFOMTz9v7pZuOnrWSUBwA="
+      "semester_projekt.Client.pdb": "sha256-d+5R2wMr0EdybX\/F\/BtU06K3zsc88Z3K2IJs7s448cw="
     },
     "runtime": {
       "dotnet.6.0.5.pl4wi6ulk0.js": "sha256-783uOt0jgblQfP6Yz5TJeuW2xxtl6UHZQPngZtCz79U=",

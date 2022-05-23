@@ -1,8 +1,64 @@
-﻿@page "/bruger"
+﻿@using System;
+@using System.Net;
+@using semester_projekt.Shared.Models;
+@using System;
+@using Dapper;
+@using Npgsql;
+@using semester_projekt.Client.Services;
+@using System.Net.Http;
+
+@page "/bruger"
 
 <h3>Bruger side</h3>
 
+<div>
+    <table class="ledigevagter">
+        <tr>
+            <th>Vagt ID</th>
+            <th>Dato</th>
+            <th>Vagt start</th>
+            <th>Vagt slut</th>
+            <th>Pause</th>
+            <th>Område</th>
+            <th>Opgave ID</th> <!--Dette skal evt laves til en join m. OpgaveBeskrivelse i stedet-->
+            <th>Bruger ID</th>
+        </tr>
+        @foreach (var vagt in Vagter)
+        {
+            <tr>
+                <td>@vagt.VagtId</td>
+                <td>@vagt.Dato</td>
+                <td>@vagt.VagtStart</td>
+                <td>@vagt.VagtSlut</td>
+                <td>@vagt.Pause</td>
+                <td>@vagt.Område</td>
+                <td>@vagt.OpgaveId</td>
+                <td>@vagt.BrugerId</td>
+            </tr>
+        }
+    </table>
+
+    
+
+
+</div>
+
+
+
 @code {
+    private List<Vagt> Vagter = new List<Vagt>();
+    private Vagt Vagt = new Vagt();
+
+
+    [Inject]
+    public IFrivilligService FrivilligService { get; set; } // laver en instans af vores interface,
+                                                                // nu kan metoderne i interfacet bruges
+
+    protected override async Task OnInitializedAsync()
+    {
+        Vagter = (await FrivilligService.GetLedigeVagter()).ToList();
+    }
+
 
 }
 

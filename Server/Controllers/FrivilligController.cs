@@ -37,7 +37,7 @@ namespace semester_projekt.Server.Controllers
 			return await Vagter.GetMineVagter(brugerId);
 		}
 
-		[HttpGet]
+		[HttpGet("ledigevagter")]
 		public async Task<IEnumerable<Vagt>> GetLedigeVagter() // http get task til vagter der er ledige
         {
 			Console.WriteLine("getledigevagter - frivilligController");

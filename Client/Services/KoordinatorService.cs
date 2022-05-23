@@ -26,7 +26,7 @@ namespace semester_projekt.Client.Services
 
         public async Task<int> UpdateVagt(int vagtId, Vagt vagt)
         {
-            var response = await httpClient.PostAsJsonAsync("api/koordinator", vagtId); // hvad skal der stå her?
+            var response = await httpClient.PostAsJsonAsync("api/koordinator/updatevagt", vagtId); // hvad skal der stå her?
             var responseStatusCode = response.StatusCode;
             return (int)responseStatusCode;
         }

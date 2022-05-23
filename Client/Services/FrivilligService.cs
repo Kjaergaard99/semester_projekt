@@ -16,7 +16,7 @@ namespace semester_projekt.Client.Services
         
         public async Task<Vagt[]?> GetLedigeVagter()
         {
-            var result = await httpClient.GetFromJsonAsync<Vagt[]>("api/frivillig"); // httpGet fra api'en
+            var result = await httpClient.GetFromJsonAsync<Vagt[]>("api/frivillig/ledigevagter"); // httpGet fra api'en
             return result;
         }
 

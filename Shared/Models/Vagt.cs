@@ -5,8 +5,8 @@ namespace semester_projekt.Shared.Models
     {
         public int VagtId { get; set; }
         public DateTime Dato { get; set; }
-        public DateTime VagtStart { get; set; }
-        public DateTime VagtSlut { get; set; }
+        public TimeSpan VagtStart { get; set; }
+        public TimeSpan VagtSlut { get; set; }
         public int Pause { get; set; }
         public string Område { get; set; }
         public int OpgaveId { get; set; }

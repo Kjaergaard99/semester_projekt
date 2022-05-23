@@ -3650,6 +3650,7 @@ C:/Users/Madsk/source/repos/semester_projekt2/Client/obj/Debug/net6.0/ref/semest
 /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/obj/Debug/net6.0/blazor.boot.json
 /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/obj/Debug/net6.0/staticwebassets.build.json
 /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/obj/Debug/net6.0/staticwebassets.development.json
+/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/obj/Debug/net6.0/scopedcss/Pages/BrugerSide.razor.rz.scp.css
 /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/obj/Debug/net6.0/scopedcss/Pages/KoordinatorSide.razor.rz.scp.css
 /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/obj/Debug/net6.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
 /Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/obj/Debug/net6.0/scopedcss/Shared/NavMenu.razor.rz.scp.css

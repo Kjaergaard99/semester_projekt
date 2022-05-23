@@ -21,8 +21,18 @@ namespace semester_projekt.Server.Models
         
         public async Task<IEnumerable<Vagt>> GetAlleVagter()
         {
-            sql = @"SELECT * FROM vagt_opgave";
-            
+            // sql = @"SELECT * FROM vagt_opgave";
+            sql = $@" SELECT v.vagt_id,
+    v.dato,
+    v.vagt_start,
+    v.vagt_slut,
+    v.pause,
+    v.""område"",
+    o.opgave_beskrivelse,
+    v.bruger_id
+   FROM vagt v
+     JOIN opgave o USING(opgave_id); ";
+
             Console.WriteLine("getAlleVagter koordinatorRepository");
 
             using (var connection = new NpgsqlConnection(connString))
@@ -51,7 +61,7 @@ namespace semester_projekt.Server.Models
             sql =
                 $@"UPDATE vagt
                 SET dato = {vagt.Dato}, ""vagt_start"" = {vagt.VagtStart}, ""vagt_slut"" = {vagt.VagtSlut}, pause = {vagt.Pause}, område = {vagt.Område},
-                    ""opgave_id"" = {vagt.OpgaveId}, ""er_booket"" = {vagt.ErBooket}, ""bruger_id"" = {vagt.BrugerId}
+                    ""opgave_id"" = {vagt.OpgaveId}, ""bruger_id"" = {vagt.BrugerId}
                 WHERE vagt_id = {vagtId}";
             
             Console.WriteLine("addVagt koordinatorRepository");

@@ -11,8 +11,11 @@
 
 <h3>Bruger side</h3>
 
-<div>
-    <table class="ledigevagter">
+<div class="ledigevagter">
+
+    <h1>Ledige vagter</h1>
+
+    <table>
         <tr>
             <th>Vagt ID</th>
             <th>Dato</th>
@@ -37,8 +40,41 @@
             </tr>
         }
     </table>
+    </div>
 
-    
+    <br />
+
+    <div class="brugervagter">
+
+        <h1>Mine vagter</h1>
+
+    <table>
+
+        <tr>
+            <th>Vagt ID</th>
+            <th>Dato</th>
+            <th>Vagt start</th>
+            <th>Vagt slut</th>
+            <th>Pause</th>
+            <th>Område</th>
+            <th>Opgave ID</th> <!--Dette skal evt laves til en join m. OpgaveBeskrivelse i stedet-->
+            <th>Bruger ID</th>
+        </tr>
+        @foreach (var vagt in BrugerVagter)
+        {
+            <tr>
+                <td>@vagt.VagtId</td>
+                <td>@vagt.Dato</td>
+                <td>@vagt.VagtStart</td>
+                <td>@vagt.VagtSlut</td>
+                <td>@vagt.Pause</td>
+                <td>@vagt.Område</td>
+                <td>@vagt.OpgaveId</td>
+                <td>@vagt.BrugerId</td>
+            </tr>
+        }
+
+    </table>
 
 
 </div>
@@ -47,6 +83,8 @@
 
 @code {
     private List<Vagt> Vagter = new List<Vagt>();
+    private List<Vagt> BrugerVagter = new List<Vagt>();
+
     private Vagt Vagt = new Vagt();
 
 
@@ -57,6 +95,7 @@
     protected override async Task OnInitializedAsync()
     {
         Vagter = (await FrivilligService.GetLedigeVagter()).ToList();
+        BrugerVagter = (await FrivilligService.GetMineVagter()).ToList();
     }
 
 

@@ -22,10 +22,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/Pages/BrugerSide.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQnJ1Z2VyU2lkZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -41,6 +37,10 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/Pages/BrugerSide.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQnJ1Z2VyU2lkZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8mpewqjau6
 
 [/Users/bruger/Documents/Skole/eaa/2. semester/SemesterProjekt/semester_projekt/Client/Pages/KoordinatorSide.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvS29vcmRpbmF0b3JTaWRlLnJhem9y

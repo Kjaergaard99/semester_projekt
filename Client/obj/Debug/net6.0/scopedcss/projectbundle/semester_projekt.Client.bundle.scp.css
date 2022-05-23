@@ -1,26 +1,26 @@
 /* /Pages/KoordinatorSide.razor.rz.scp.css */
-body[b-2oaz6k8k5x] {
+body[b-jr8g43kwko] {
 }
 
-table[b-2oaz6k8k5x], th[b-2oaz6k8k5x], td[b-2oaz6k8k5x] {
+table[b-jr8g43kwko], th[b-jr8g43kwko], td[b-jr8g43kwko] {
     border: 1px solid black;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
-.page[b-nkgtt942gz] {
+.page[b-9alvbg16zc] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main[b-nkgtt942gz] {
+main[b-9alvbg16zc] {
     flex: 1;
 }
 
-.sidebar[b-nkgtt942gz] {
+.sidebar[b-9alvbg16zc] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
-.top-row[b-nkgtt942gz] {
+.top-row[b-9alvbg16zc] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -29,100 +29,100 @@ main[b-nkgtt942gz] {
     align-items: center;
 }
 
-    .top-row[b-nkgtt942gz]  a, .top-row[b-nkgtt942gz]  .btn-link {
+    .top-row[b-9alvbg16zc]  a, .top-row[b-9alvbg16zc]  .btn-link {
         white-space: nowrap;
         margin-left: 1.5rem;
         text-decoration: none;
     }
 
-    .top-row[b-nkgtt942gz]  a:hover, .top-row[b-nkgtt942gz]  .btn-link:hover {
+    .top-row[b-9alvbg16zc]  a:hover, .top-row[b-9alvbg16zc]  .btn-link:hover {
         text-decoration: underline;
     }
 
-    .top-row[b-nkgtt942gz]  a:first-child {
+    .top-row[b-9alvbg16zc]  a:first-child {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
 @media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-nkgtt942gz] {
+    .top-row:not(.auth)[b-9alvbg16zc] {
         display: none;
     }
 
-    .top-row.auth[b-nkgtt942gz] {
+    .top-row.auth[b-9alvbg16zc] {
         justify-content: space-between;
     }
 
-    .top-row[b-nkgtt942gz]  a, .top-row[b-nkgtt942gz]  .btn-link {
+    .top-row[b-9alvbg16zc]  a, .top-row[b-9alvbg16zc]  .btn-link {
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-nkgtt942gz] {
+    .page[b-9alvbg16zc] {
         flex-direction: row;
     }
 
-    .sidebar[b-nkgtt942gz] {
+    .sidebar[b-9alvbg16zc] {
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row[b-nkgtt942gz] {
+    .top-row[b-9alvbg16zc] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row.auth[b-nkgtt942gz]  a:first-child {
+    .top-row.auth[b-9alvbg16zc]  a:first-child {
         flex: 1;
         text-align: right;
         width: 0;
     }
 
-    .top-row[b-nkgtt942gz], article[b-nkgtt942gz] {
+    .top-row[b-9alvbg16zc], article[b-9alvbg16zc] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
 }
 
 /* /Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-vp1xw0sx62] {
+.navbar-toggler[b-1cy4z7u7ck] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.top-row[b-vp1xw0sx62] {
+.top-row[b-1cy4z7u7ck] {
     height: 3.5rem;
     background-color: rgba(0,0,0,0.4);
 }
 
-.navbar-brand[b-vp1xw0sx62] {
+.navbar-brand[b-1cy4z7u7ck] {
     font-size: 1.1rem;
 }
 
-.oi[b-vp1xw0sx62] {
+.oi[b-1cy4z7u7ck] {
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
 }
 
-.nav-item[b-vp1xw0sx62] {
+.nav-item[b-1cy4z7u7ck] {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-vp1xw0sx62] {
+    .nav-item:first-of-type[b-1cy4z7u7ck] {
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type[b-vp1xw0sx62] {
+    .nav-item:last-of-type[b-1cy4z7u7ck] {
         padding-bottom: 1rem;
     }
 
-    .nav-item[b-vp1xw0sx62]  a {
+    .nav-item[b-1cy4z7u7ck]  a {
         color: #d7d7d7;
         border-radius: 4px;
         height: 3rem;
@@ -131,22 +131,22 @@ main[b-nkgtt942gz] {
         line-height: 3rem;
     }
 
-.nav-item[b-vp1xw0sx62]  a.active {
+.nav-item[b-1cy4z7u7ck]  a.active {
     background-color: rgba(255,255,255,0.25);
     color: white;
 }
 
-.nav-item[b-vp1xw0sx62]  a:hover {
+.nav-item[b-1cy4z7u7ck]  a:hover {
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
 
 @media (min-width: 641px) {
-    .navbar-toggler[b-vp1xw0sx62] {
+    .navbar-toggler[b-1cy4z7u7ck] {
         display: none;
     }
 
-    .collapse[b-vp1xw0sx62] {
+    .collapse[b-1cy4z7u7ck] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }

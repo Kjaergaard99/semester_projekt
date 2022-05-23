@@ -13,19 +13,19 @@
 
 <div>
     <table class="vagter">
+        <tr>
+            <th>Vagt ID</th>
+            <th>Dato</th>
+            <th>Vagt start</th>
+            <th>Vagt slut</th>
+            <th>Pause</th>
+            <th>Område</th>
+            <th>Opgave ID</th> <!--Dette skal evt laves til en join m. OpgaveBeskrivelse i stedet-->
+            <th>Er booket?</th>
+            <th>Bruger ID</th>
+        </tr>
         @foreach (var vagt in Vagter)
         {
-            <tr>
-                <th>Vagt ID</th>
-                <th>Dato</th>
-                <th>Vagt start</th>
-                <th>Vagt slut</th>
-                <th>Pause</th>
-                <th>Område</th>
-                <th>Opgave ID</th> <!--Dette skal evt laves til en join m. OpgaveBeskrivelse i stedet-->
-                <th>Er booket?</th>
-                <th>Bruger ID</th>
-            </tr>
             <tr>
                 <td>@vagt.VagtId</td>
                 <td>@vagt.Dato</td>

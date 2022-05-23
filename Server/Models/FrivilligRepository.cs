@@ -53,8 +53,7 @@ namespace semester_projekt.Server.Models
             sql =
                 $@"UPDATE vagt
                 SET bruger_id = {brugerId}
-                WHERE vagt_id = {vagtId} AND 
-                WHERE bruger_id IS NULL";
+                WHERE vagt_id = {vagtId}";
 
             Console.WriteLine("bookVagt frivilligRepository");
 

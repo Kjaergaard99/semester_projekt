@@ -13,8 +13,7 @@ namespace semester_projekt.Server.Models
 {
     internal class KoordinatorRepository : IKoordinatorRepository
     {
-        
-        string connString = "User ID=adminbruger;Password=!hej1234;Host=misfitsfestival-db.postgres.database.azure.com;Port=5432;Database=misfits;";
+        string connString = "User ID=postgres;Password=qrm49zyp;Host=localhost;Port=5432;Database=2_semester_projekt;";
         string sql = "";
 
         // FestivalDBContext db = new FestivalDBContext(); // skal denne linje være ligesom mini-projekt?
@@ -22,7 +21,7 @@ namespace semester_projekt.Server.Models
         
         public async Task<IEnumerable<Vagt>> GetAlleVagter()
         {
-            sql = @"SELECT * FROM vagt";
+            sql = @"SELECT * FROM vagt_opgave";
             
             Console.WriteLine("getAlleVagter koordinatorRepository");
 
@@ -36,8 +35,7 @@ namespace semester_projekt.Server.Models
         public async void AddVagt(Vagt vagt)
         {
             sql =
-                $@"INSERT INTO vagt (dato, ""vagt_start"", ""vagt_slut"", pause, område, ""opgave_id"", ""er_booket"", ""bruger_id"")
-                   VALUES({vagt.Dato}, {vagt.VagtStart}, {vagt.VagtSlut}, {vagt.Pause}, {vagt.Område}, {vagt.OpgaveId}, {vagt.ErBooket}, {vagt.BrugerId})";
+                $@"CALL opret_vagt ({vagt.VagtId}, {vagt.Dato}, {vagt.VagtStart}, {vagt.VagtSlut}, {vagt.Pause}, {vagt.Område}, {vagt.OpgaveId}, {vagt.BrugerId})";
             
             Console.WriteLine("addVagt koordinatorRepository");
 
@@ -76,8 +74,7 @@ namespace semester_projekt.Server.Models
         
         public async Task<IEnumerable<Bruger>> GetAlleFrivillige()
         {
-            sql = @"SELECT * FROM bruger
-            WHERE rolle_id = 1";
+            sql = @"SELECT * FROM frivillig_kompetencer";
             
             Console.WriteLine("getAlleFrivillige koordinatorRepository");
 

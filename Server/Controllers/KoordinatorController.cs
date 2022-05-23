@@ -58,14 +58,14 @@ namespace semester_projekt.Server.Controllers
             Vagter.DeleteVagt(vagtId);
         }
 
-        [HttpPost]
+        [HttpPost("postopgave")]
         public void AddOpgave(Opgave opgave) // http post til at tilføje en ny opgave
         {
             Console.WriteLine("addOpgave - koordinatorController");
             Vagter.AddOpgave(opgave);
         }
 
-        [HttpGet ("getfrivillige")]
+        [HttpGet("getfrivillige")]
         public async Task<IEnumerable<Bruger>> GetAlleFrivillige() // http get på alle frivillige i systemet
         {
             Console.WriteLine("getAlleFrivillige - koordinatorController");

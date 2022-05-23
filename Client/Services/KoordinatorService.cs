@@ -46,7 +46,7 @@ namespace semester_projekt.Client.Services
 
         public async Task<int> AddOpgave(Opgave opgave)
         {
-            var response = await httpClient.PostAsJsonAsync("api/koordinator", opgave);
+            var response = await httpClient.PostAsJsonAsync("api/koordinator/postopgave", opgave);
             var responseStatusCode = response.StatusCode;
             return (int)responseStatusCode;
         }

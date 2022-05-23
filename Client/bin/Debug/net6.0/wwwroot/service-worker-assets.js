@@ -969,19 +969,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-+HxMFj4EH7ykHZvyyRUPXwyo1d4HSU9vqS\/XcRVh9Oo=",
+      "hash": "sha256-6CB9d3H4Z+rhXwCFJkawxWjUXSMohjDSGPSxF6kx6X0=",
       "url": "_framework\/semester_projekt.Shared.dll"
     },
     {
-      "hash": "sha256-Yeh+lmWI6myqHI\/EuAvwdjRKVi+j3SibG39ILmSDEI4=",
+      "hash": "sha256-33CLuf76iX920wJ4kZ2M3lpUObLQClxuy\/PJ4\/ccKNw=",
       "url": "_framework\/semester_projekt.Shared.pdb"
     },
     {
-      "hash": "sha256-02ofauVtji4wVUMGeutwN46tCMLiOAYfMRLhRwg\/pNg=",
+      "hash": "sha256-kBp0SMXLGl0q15YgsP\/piYN44AxcIx+AyNL0ZfS+kV8=",
       "url": "_framework\/semester_projekt.Client.dll"
     },
     {
-      "hash": "sha256-cUjt1qNpWQFKCxpgi1jjh+J0uBxx6sujh69F7Xw9hwc=",
+      "hash": "sha256-PBT46iO5KI1ZpKFw6APeZnc0p9hN+PyJbGA+59Q\/\/w4=",
       "url": "_framework\/semester_projekt.Client.pdb"
     },
     {
@@ -989,9 +989,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-XewOczZ6wwUi\/T7FlvF+82SxzrQFjK2Q5fOYrrilUI0=",
+      "hash": "sha256-d64dEf+ZJpFIL5N43PQHfMlzCq1FYDxAaHjFbtJDdrw=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "ZW9TGl3f"
+  "version": "0W6suo2k"
 };

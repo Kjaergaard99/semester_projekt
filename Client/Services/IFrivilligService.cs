@@ -5,10 +5,10 @@ namespace semester_projekt.Client.Services
 {
 	public interface IFrivilligService
 	{
-		Task<Vagt[]?> GetLedigeVagter();
+		Task<Vagt[]?> GetLedigeVagter(); // metode til get på alle ledige vagter
 
-		Task<Vagt[]?> GetMineVagter();
+		Task<Vagt[]?> GetMineVagter(); // metode til get på alle ledige vagter
 
-		Task<int> BookVagt(Vagt vagt);
+		Task<int> BookVagt(Vagt vagt); // metode til booking af en vagt
 	}
 }

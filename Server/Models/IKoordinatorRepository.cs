@@ -14,17 +14,17 @@ namespace semester_projekt.Server.Models
 {
 	public interface IKoordinatorRepository
 	{
-		Task<IEnumerable<Vagt>> GetAlleVagter();
+		Task<IEnumerable<Vagt>> GetAlleVagter(); // metode til get alle vagter i systemet
 
-		void AddVagt(Vagt vagt);
+		void AddVagt(Vagt vagt); // metode til at poste en ny vagt
 
-		void UpdateVagt(int vagtId, Vagt vagt);
+		void UpdateVagt(int vagtId, Vagt vagt); // metode til at update en vagt
 
-		void DeleteVagt(int id);
+		void DeleteVagt(int id); // metode til delete af en vagt
 
-		Task<IEnumerable<Bruger>> GetAlleFrivillige();
+		Task<IEnumerable<Bruger>> GetAlleFrivillige(); // task til at hente alle frivillige i systemet
 
-		void AddOpgave(Opgave opgave);
+		void AddOpgave(Opgave opgave); // metode til post af en ny opgave
 
 	}
 }

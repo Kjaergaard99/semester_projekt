@@ -72,16 +72,18 @@
 
 
 @code {
-    private List<Bruger> Brugere = new List<Bruger>();
+    private List<Bruger> Brugere = new List<Bruger>(); // definerer en ny liste af brugere
 
-    private Bruger Bruger = new Bruger();
+    private Bruger Bruger = new Bruger(); // definerer en ny bruger
 
     [Inject]
-    public IKoordinatorService KoordinatorService { get; set; }
+    public IKoordinatorService KoordinatorService { get; set; } // laver en instans af vores interface, 
+                                                                // nu kan metoderne i interfacet bruges
 
     protected override async Task OnInitializedAsync()
     {
-        Brugere = (await KoordinatorService.GetAlleFrivillige()).ToList();
+        Brugere = (await KoordinatorService.GetAlleFrivillige()).ToList(); // populater vores liste af brugere v hjælp af,
+                                                                           // getAlleFrivillige() metoden + toList
     }
 
 
